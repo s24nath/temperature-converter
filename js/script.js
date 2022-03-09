@@ -3,6 +3,13 @@ let rightInput = document.getElementById("rht_inp"); // Getting right input box
 let tempSelLft = document.getElementById("temp_select_lft"); // Getting left select box
 let tempSelRht = document.getElementById("temp_select_rht"); // Getting right select box
 
+let storeFormula;
+
+function selectFormula() {
+    
+}
+
+
 // Creating the Formula for conversion
 function convertTemperature(from,to,val) {
     let result;
