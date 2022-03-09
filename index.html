@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .center {
+            width: 100%;
+            max-width: 800px;
+            margin: 100px auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: cornflowerblue;
+            padding: 50px 30px;
+        }
+        .heading{
+            width: 100%;
+            text-align: center;
+            color: white;
+        }
+        .input-field-container {
+            width: 50%;
+            padding: 20px;
+        }
+        .input-field-container input {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            padding: 20px 10px;
+            border: none;
+        }
+        .input-field-container select {
+            width: 100%;
+            text-align: center;
+            border: none;
+            background-color: lightblue;
+        }
+        .load {
+            width: 100%;
+            color: white;
+            text-align: center;            
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="center">
+        <h1 class="heading">Temperature Converter</h1>
+        <div class="input-field-container">
+            <div class="input-container">
+                <input type="number" value="0" id="lft_inp">
+            </div>
+            <div class="select-container">
+                <select name="" id="temp_select_lft">
+                    <option value="c" selected>Celsius</option>
+                    <option value="f">Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-field-container">
+            <div class="input-container">
+                <input type="number" value="32" id="rht_inp">
+            </div>
+            <div class="select-container">
+                <select name="" id="temp_select_rht">
+                    <option value="c">Celsius</option>
+                    <option value="f" selected>Fahrenheit</option>
+                    <option value="k">Kelvin</option>
+                </select>
+            </div>
+        </div>
+        <!-- <p id="load-text" class="load">Wait...</p> -->
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
